@@ -1,0 +1,44 @@
+const errorCode = {
+  SUCCESS: {
+    CODE: 'SUCCESS',
+    STATUS: 200
+  },
+  INTERNAL_SERVER_ERROR: {
+    CODE: 'INTERNAL_SERVER_ERROR',
+    STATUS: 500
+  },
+  BAD_REQUEST: {
+    CODE: 'BAD_REQUEST',
+    STATUS: 400
+  },
+  URI_NOT_FOUND: {
+    CODE: 'URI_NOT_FOUND',
+    STATUS: 404
+  },
+  NOT_FOUND: {
+    CODE: 'NOT_FOUND',
+    STATUS: 404
+  },
+  HOLD_CASH_OVERNIGHT: {
+    CODE: 'HOLD_CASH_OVERNIGHT',
+    STATUS: 500
+  },
+  NOT_APPROVED_BAG: {
+    CODE: 'NOT_APPROVED_BAG',
+    STATUS: 500
+  },
+  UNAUTHORIZED: {
+    CODE: 'UNAUTHORIZED',
+    STATUS: 401
+  },
+  TOKEN_EXPIRED: {
+    CODE: 'TOKEN_EXPIRED',
+    STATUS: 500
+  },
+  VALIDATION: {
+    CODE: 'VALIDATION',
+    STATUS: 400
+  }
+}
+
+export default errorCode

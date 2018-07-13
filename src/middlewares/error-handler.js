@@ -29,7 +29,7 @@ const handler = (err, ctx) => {
   if (err.code) {
     ctx.status = (Number.isInteger(err.status)) ? err.status : ErrorCode.INTERNAL_SERVER_ERROR.STATUS
     ctx.body = {
-      status: ctx.status,
+      statusCode: ctx.status,
       name: err.name || null,
       code: err.code || null,
       message: err.message || null,
@@ -38,7 +38,7 @@ const handler = (err, ctx) => {
   } else {
     ctx.status = ErrorCode.INTERNAL_SERVER_ERROR.STATUS
     ctx.body = {
-      status: ErrorCode.INTERNAL_SERVER_ERROR.STATUS,
+      statusCode: ErrorCode.INTERNAL_SERVER_ERROR.STATUS,
       name: err.name || null,
       code: ErrorCode.INTERNAL_SERVER_ERROR.CODE,
       message: err.message || null,
